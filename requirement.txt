@@ -4,3 +4,5 @@ tensorflow
 numpy
 sklearn
 matplotlib
+instruction:-
+pip install pandas numpy matplotlib scikit-learn tensorflow
