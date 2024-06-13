@@ -1,0 +1,45 @@
+Dataset related to network traffic analysis. Each row seems to represent a network connection, characterized by various attributes. This type of dataset is often used in network intrusion detection research. Here's a breakdown of what each column likely represents based on common network traffic datasets, such as the KDD Cup 1999 dataset or similar intrusion detection datasets:
+
+Duration: Length (in seconds) of the connection.
+Protocol type: Type of protocol (e.g., tcp, udp, icmp).
+Service: Network service on the destination (e.g., http, ftp, smtp).
+Flag: Normal or error status of the connection.
+Source bytes: Number of data bytes from source to destination.
+Destination bytes: Number of data bytes from destination to source.
+Land: 1 if connection is from/to the same host/port; 0 otherwise.
+Wrong fragment: Number of wrong fragments.
+Urgent: Number of urgent packets.
+Hot: Number of “hot” indicators.
+Failed logins: Number of failed login attempts.
+Logged in: 1 if successfully logged in; 0 otherwise.
+Number of compromised conditions: Number of compromised conditions.
+Root shell: 1 if root shell is obtained; 0 otherwise.
+Su attempts: Number of “su root” command attempts.
+Number of root accesses: Number of root accesses.
+Number of file creations: Number of file creation operations.
+Number of shells: Number of shell prompts.
+Number of access files: Number of operations on access control files.
+Number of outbound commands: Number of outbound commands in an ftp session.
+Is hot login: 1 if the login belongs to the “hot” list; 0 otherwise.
+Is guest login: 1 if the login is a guest login; 0 otherwise.
+Count: Number of connections to the same host as the current connection in the past two seconds.
+Srv count: Number of connections to the same service as the current connection in the past two seconds.
+Serror rate: % of connections that have “SYN” errors.
+Srv serror rate: % of connections that have “SYN” errors for the same service.
+Rerror rate: % of connections that have “REJ” errors.
+Srv rerror rate: % of connections that have “REJ” errors for the same service.
+Same srv rate: % of connections to the same service.
+Diff srv rate: % of connections to different services.
+Srv diff host rate: % of connections to different hosts.
+Dst host count: Number of connections to the same destination host.
+Dst host srv count: Number of connections to the same service as the current connection to the destination host.
+Dst host same srv rate: % of connections to the same service at the destination host.
+Dst host diff srv rate: % of connections to different services at the destination host.
+Dst host same src port rate: % of connections to the same source port.
+Dst host srv diff host rate: % of connections to different hosts for the same service.
+Dst host serror rate: % of connections that have “SYN” errors at the destination host.
+Dst host srv serror rate: % of connections that have “SYN” errors for the same service at the destination host.
+Dst host rerror rate: % of connections that have “REJ” errors at the destination host.
+Dst host srv rerror rate: % of connections that have “REJ” errors for the same service at the destination host.
+Label: Indicates whether the connection is normal or a specific type of attack (e.g., normal, neptune, warezclient, ipsweep, etc.).
+Difficulty level: The difficulty level associated with the record (if applicable).
